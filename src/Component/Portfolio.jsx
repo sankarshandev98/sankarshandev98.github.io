@@ -64,7 +64,7 @@ export default function Portfolio() {
     },
   ];
   return (
-    <div name="projects" className="w-full md:h-screen">
+    <div name="project" className="w-full md:h-screen">
       <div className="max-w-screen-lg px-4 mx-auto w-full h-full">
         <div className="mb-20">
           <p className="text-4xl mx-5 font-bold inline border-b-4 border-blue-500">
