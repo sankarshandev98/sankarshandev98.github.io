@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div name="about" className="w-full h-screen">
+    <div name="about me" className="w-full h-screen">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="mb-20">
           <p className="inline ml-5 text-xl sm:text-2xl md:text-4xl font-semibold border-b-4 border-blue-500">
@@ -10,17 +10,9 @@ export default function About() {
           </p>
         </div>
         <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          quibusdam molestias maiores repellendus saepe placeat. Aliquid eaque
-          voluptate maxime doloremque natus mollitia incidunt temporibus
-          exercitationem dolore, animi illo dignissimos at.
-        </p>
-        <br />
-        <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          repellendus. Ad sapiente et sunt nam obcaecati ipsum odit praesentium
-          fugit accusamus temporibus consequatur, cum nihil itaque at
-          repellendus excepturi fuga.
+          An Aspiring full stack web developer with 1200 hours+ of hands-on
+          coding experience in building websites with MERN stack and various web
+          technologies, including HTML5, CSS3, and JavaScript ES6.
         </p>
       </div>
     </div>

@@ -15,20 +15,8 @@ export default function Home() {
           />
         </div>
           <h2 className="inline ml-5 text-xl sm:text-2xl md:text-4xl font-semibold">
-            I am a MERN Stack Developer
+            Sankarshan Goswami
           </h2>
-          <p className="py-4 max-w-md">
-            1200 hours plus hands-on coding experience, working with
-            technologies like ReactJS, node.JS, express.JS, MongoDB etc.
-          </p>
-          <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-blue-500 cursor-pointer">
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </button>
-          </div>
         </div>
       </div>
     </div>

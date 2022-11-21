@@ -79,9 +79,9 @@ export default function Skill() {
     },
   ];
   return (
-    <div name="experience" className="w-full my-20 px-4">
+    <div name="skills" className="w-full my-20 px-4">
       <p className="mx-5 inline text-xl sm:text-2xl md:text-4xl font-semibold border-b-4 border-blue-500">
-        Professional Skillset
+        Skills
       </p>
       <div className="h-80 sm:h-96 md:h-screen">
         <p className="text-xl text-center md:my-10 sm:text-2xl md:text-4xl">

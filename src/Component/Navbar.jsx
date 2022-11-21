@@ -11,19 +11,23 @@ export default function Navbar() {
     },
     {
       id: 2,
-      link: "about",
+      link: "about me",
     },
     {
       id: 3,
-      link: "experience",
+      link: "skills",
     },
     {
       id: 4,
-      link: "portfolio",
+      link: "project",
     },
     {
       id: 5,
       link: "contact",
+    },
+    {
+      id: 6,
+      link: "resume",
     },
   ];
   return (
