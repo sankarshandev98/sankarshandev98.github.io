@@ -8,147 +8,76 @@ import rct from "../assets/react.png";
 import node from "../assets/node.png";
 import git from "../assets/github.png";
 import live from "../assets/web.png";
+import GitHubCalendar from "react-github-calendar";
 
 export default function Portfolio() {
-  const project = [
+  const portfolios = [
     {
       id: 1,
-      img: jm1,
-      ic: git,
-      ic2: live,
-      title: "JioMart Website Clone",
-      f1: "Signup & Login With Google, Facebook",
-      f2: "Product Search & Filter",
-      f3: "Responsive UI",
-      git: "https://github.com/sankarshandev98/expensive-activity-2774/tree/main/jio-mart",
-      live: "https://strong-truffle-00aad0.netlify.app/",
+      src: jm1,
     },
     {
       id: 2,
-      img: kfc1,
-      ic: git,
-      ic2: live,
-      title: "KFC Website Clone",
-      f1: "User authentication",
-      f2: "Product Search & Filter",
-      f3: "Impressive UI",
-      git: "https://github.com/sankarshandev98/for-stick-2556",
-      live: "https://symphonious-rolypoly-b8a660.netlify.app/index.html",
+      src: kfc1,
     },
   ];
-  const techs = [
-    {
-      id: 1,
-      src: html,
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: css,
-      style: "shadow-blue-500",
-    },
-    {
-      id: 3,
-      src: js,
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: rct,
-      style: "shadow-slate-500",
-    },
-    {
-      id: 5,
-      src: node,
-      style: "shadow-yellow-200",
-    },
-  ];
+
   return (
-    <div name="project" className="w-full md:h-screen">
-      <div className="max-w-screen-lg px-4 mx-auto w-full h-full">
-        <div className="mb-20">
-          <p className="text-4xl mx-5 font-bold inline border-b-4 border-blue-500">
+    <div
+      name="project"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full pt-8"
+    >
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Project
           </p>
+          <p className="py-6">Check out some of my work right here</p>
         </div>
-        {project.map(({ id, img, title, f1, f2, f3, ic, ic2, git, live }) => (
-          <div
-            key={id}
-            name="project-div"
-            className="mb-5 shadow-blue-400 shadow-md rounded-lg p-5 flex flex-row justify-between space-x-4"
-          >
-            <div name="lft-sec" className="flex flex-col w-3/4">
-              <h1 className="text-2xl pb-2 font-semibold">{title}</h1>
-              <div className="mb-5 inline">
-                <img
-                  src={img}
-                  alt=""
-                  className="rounded-md hover:scale-105 duration-500"
-                />
-              </div>
-              <p className="text-center mb-2 text-lg font-semibold">
-                Tech Stack Used
-              </p>
-              <div className="flex flex-row justify-evenly items-center">
-                {techs.map(({ id, src, style }) => (
-                  <img
-                    key={id}
-                    src={src}
-                    className={`shadow-md hover:scale-105 duration-500 p-1 rounded-lg w-14 h-14 ${style}`}
-                    alt=""
-                  />
-                ))}
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {portfolios.map(({ id, src }) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+              <img
+                src={src}
+                alt=""
+                className="rounded-md duration-200 hover:scale-105"
+              />
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Demo
+                </button>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </button>
               </div>
             </div>
-            <div name="rght-sec" className="flex flex-col w-1/4">
-              <h1 className="text-center font-semibold mb-4">Key Features</h1>
-              <div className="shadow-red-400 shadow-md rounded-md mx-2 h-10 text-sm flex items-center justify-center text-center mb-5 hover:scale-105 duration-500">
-                {f1}
+          ))}
+        </div>
+        <div className="w-full h-screen text-white pt-10">
+          <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
+            <div>
+              <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+                GitHub Statistics
+              </p>
+            </div>
+            <div className="m-auto">
+              <div className="pt-8">
+                <GitHubCalendar username="sankarshandev98" />
               </div>
-              <div className="shadow-green-400 shadow-md rounded-md mx-2 h-10 text-sm flex items-center justify-center text-center mb-5 hover:scale-105 duration-500">
-                {f2}
-              </div>
-              <div className="shadow-blue-400 shadow-md rounded-md mx-2 h-10 text-sm flex items-center justify-center text-center mb-5 hover:scale-105 duration-500">
-                {f3}
-              </div>
-              <div className="shadow-orange-400 shadow-md rounded-md mx-2 h-10 text-sm flex items-center justify-center text-center mb-5 hover:scale-105 duration-500">
-                {f2}
-              </div>
-              <div className="shadow-yellow-300 shadow-md rounded-md mx-2 h-10 text-sm flex items-center justify-center text-center mb-5 hover:scale-105 duration-500">
-                {f2}
-              </div>
-              <div className="shadow-slate-500 shadow-md rounded-md mx-2 h-10 text-sm flex items-center justify-center text-center mb-5 hover:scale-105 duration-500">
-                {f2}
-              </div>
-              <div className="flex flex-row h-14 mt-4 items-center justify-around">
-                <button className="bg-blue-400 w-28 rounded-3xl h-8 flex flex-row items-center justify-evenly">
-                  <a
-                    className="flex flex-row items-center justify-between space-x-4"
-                    href={git}
-                    target="_blank"
-                  >
-                    <p>Code</p>
-                    <span>
-                      <img src={ic} alt="" className="w-5 h-5" />
-                    </span>
-                  </a>
-                </button>
-                <button className="bg-blue-400 w-28 rounded-3xl h-8 flex flex-row items-center justify-evenly">
-                  <a
-                    className="flex flex-row items-center justify-between space-x-4"
-                    href={live}
-                    target="_blank"
-                  >
-                    <p>Live</p>
-                    <span>
-                      <img src={ic2} alt="" className="w-5 h-5" />
-                    </span>
-                  </a>
-                </button>
+              <div className="m-auto w-full pt-8 flex flex-col lg:flex lg:flex-row md:flex md:flex-col gap-5 justify-between sm:flex sm:flex-col">
+                <img
+                  src="https://camo.githubusercontent.com/4cd88415a16c5b90cc86bab400cc59afd8dacad1448f63790a2d4d565385f304/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d73616e6b61727368616e646576393826"
+                  alt=""
+                />
+                <img
+                  src="https://camo.githubusercontent.com/21a630e6dc5debdf5b0c337fe5a5e6529160fdc6dc879c86ca3f42c8019cd469/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d73616e6b61727368616e64657639382673686f775f69636f6e733d74727565266c6f63616c653d656e"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

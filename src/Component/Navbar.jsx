@@ -25,10 +25,6 @@ export default function Navbar() {
       id: 5,
       link: "contact",
     },
-    {
-      id: 6,
-      link: "resume",
-    },
   ];
   return (
     <div className="flex justify-between items-center w-full h-10 text-white px-4 bg-blue-400 fixed">

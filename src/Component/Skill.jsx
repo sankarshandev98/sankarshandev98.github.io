@@ -11,126 +11,103 @@ import trello from "../assets/trl.png";
 import vs from "../assets/vs.png";
 import boot from "../assets/b.png";
 
-export default function Skill() {
-  const bskills = [
+const Experience = () => {
+  const techs = [
     {
       id: 1,
-      b: rct,
+      src: html,
+      title: "HTML",
       style: "shadow-orange-500",
     },
     {
       id: 2,
-      b: node,
-      style: "shadow-orange-500",
+      src: css,
+      title: "CSS",
+      style: "shadow-blue-500",
     },
     {
       id: 3,
-      b: mongo,
-      style: "shadow-orange-500",
-    },
-  ];
-  const fskills = [
-    {
-      id: 1,
-      f: html,
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      f: css,
-      style: "shadow-orange-500",
-    },
-    {
-      id: 3,
-      f: tail,
-      style: "shadow-orange-500",
+      src: js,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
     },
     {
       id: 4,
-      f: boot,
-      style: "shadow-orange-500",
+      src: rct,
+      title: "React",
+      style: "shadow-blue-600",
     },
     {
       id: 5,
-      f: js,
-      style: "shadow-orange-500",
+      src: tail,
+      title: "Tailwind",
+      style: "shadow-sky-400",
     },
     {
       id: 6,
-      f: rct,
-      style: "shadow-orange-500",
+      src: node,
+      title: "Node JS",
+      style: "shadow-white",
+    },
+    {
+      id: 7,
+      src: mongo,
+      title: "MongoDB",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 8,
+      src: git,
+      title: "GitHub",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: trello,
+      title: "Trello",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 10,
+      src: vs,
+      title: "Vs Code",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 11,
+      src: boot,
+      title: "BootStrap",
+      style: "shadow-gray-400",
     },
   ];
-  const tools = [
-    {
-      id: 1,
-      t: vs,
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      t: git,
-      style: "shadow-orange-500",
-    },
-    {
-      id: 3,
-      t: trello,
-      style: "shadow-orange-500",
-    },
-  ];
+
   return (
-    <div name="skills" className="w-full my-20 px-4">
-      <p className="mx-5 inline text-xl sm:text-2xl md:text-4xl font-semibold border-b-4 border-blue-500">
-        Skills
-      </p>
-      <div className="h-80 sm:h-96 md:h-screen">
-        <p className="text-xl text-center md:my-10 sm:text-2xl md:text-4xl">
-          Fronted
-        </p>
-        <div className="grid grid-rows-3 grid-cols-3 justify-items-center items-center gap-3 gap-y-10 m-4">
-          {fskills.map(({ id, f, style }) => (
-            <div key={id}>
-              <img
-                src={f}
-                alt=""
-                className={`w-20 h-20 sm:w-32 sm:h-32 md:w-44 md:h-44 object-contain ${style} shadow-md hover:scale-105 duration-500 p-1 rounded-lg`}
-              />
-            </div>
-          ))}
+    <div
+      name="skills"
+      className="bg-gradient-to-b from-gray-800 to-black w-full pt-8"
+    >
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+        <div>
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+            Skills
+          </p>
+          <p className="py-6">These are the technologies I've worked with</p>
         </div>
-      </div>
-      <div className="h-40 sm:h-56 md:h-80">
-        <p className="text-xl text-center md:mb-10 sm:text-2xl md:text-4xl">
-          Backend
-        </p>
-        <div className="grid grid-rows-1 grid-cols-3 justify-items-center items-center gap-3 gap-y-10 m-4">
-          {bskills.map(({ id, b, style }) => (
-            <div key={id}>
-              <img
-                src={b}
-                alt=""
-                className={`w-20 h-20 sm:w-32 sm:h-32 md:w-44 md:h-44 object-contain ${style} shadow-md hover:scale-105 duration-500 p-1 rounded-lg`}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="h-40 sm:h-56 md:h-80">
-        <p className="text-xl text-center md:mb-10 sm:text-2xl md:text-4xl">
-          Tools that i use
-        </p>
-        <div className="grid grid-rows-1 grid-cols-3 justify-items-center items-center gap-3 gap-y-10 m-4">
-          {tools.map(({ id, t, style }) => (
-            <div key={id}>
-              <img
-                src={t}
-                alt=""
-                className={`w-20 h-20 sm:w-32 sm:h-32 md:w-44 md:h-44 object-contain ${style} shadow-md hover:scale-105 duration-500 p-1 rounded-lg`}
-              />
+
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+          {techs.map(({ id, src, title, style }) => (
+            <div
+              key={id}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            >
+              <img src={src} alt="" className="w-20 mx-auto" />
+              <p className="mt-4">{title}</p>
             </div>
           ))}
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Experience;
