@@ -1,13 +1,14 @@
 import React from "react";
 import jm1 from "../assets/portfolio/1.PNG";
-import kfc1 from "../assets/portfolio/3.PNG";
+import kfc1 from "../assets/portfolio/2.jpg";
+import hd from "../assets/portfolio/3.PNG";
+import sk from "../assets/portfolio/4.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
 import rct from "../assets/react.png";
-import node from "../assets/node.png";
-import git from "../assets/github.png";
-import live from "../assets/web.png";
+// import git from "../assets/github.png";
+// import live from "../assets/web.png";
 import GitHubCalendar from "react-github-calendar";
 
 export default function Portfolio() {
@@ -15,10 +16,22 @@ export default function Portfolio() {
     {
       id: 1,
       src: jm1,
+      title: "JioMart Clone",
     },
     {
       id: 2,
       src: kfc1,
+      title: "HeadphoneZone Clone",
+    },
+    {
+      id: 3,
+      src: hd,
+      title: "KFC Clone",
+    },
+    {
+      id: 4,
+      src: sk,
+      title: "Skill-UP",
     },
   ];
 
@@ -35,14 +48,23 @@ export default function Portfolio() {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 sm:px-0">
+          {portfolios.map(({ id, src, title }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+              <div className="p-2">
+                <h1>{title}</h1>
+              </div>
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
+              <div className="flex items-center justify-around mt-10">
+                <img src={html} alt="" className="w-10 h-10" />
+                <img src={css} alt="" className="w-10 h-10" />
+                <img src={rct} alt="" className="w-10 h-10" />
+                <img src={js} alt="" className="w-10 h-10" />
+              </div>
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
