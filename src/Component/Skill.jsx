@@ -10,6 +10,11 @@ import mongo from "../assets/MongoDB.png";
 import trello from "../assets/trl.png";
 import vs from "../assets/vs.png";
 import boot from "../assets/b.png";
+import chakra from "../assets/chakra.png";
+import gitt from "../assets/git.png";
+import post from "../assets/postman.png";
+import type from "../assets/typescript.png";
+import ex from "../assets/expressjs.png";
 
 const Experience = () => {
   const techs = [
@@ -27,56 +32,85 @@ const Experience = () => {
     },
     {
       id: 3,
-      src: js,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: rct,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 5,
       src: tail,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
-      id: 6,
-      src: node,
-      title: "Node JS",
-      style: "shadow-white",
-    },
-    {
-      id: 7,
-      src: mongo,
-      title: "MongoDB",
-      style: "shadow-pink-400",
-    },
-    {
-      id: 8,
-      src: git,
-      title: "GitHub",
+      id: 4,
+      src: chakra,
+      title: "Chakra UI",
       style: "shadow-gray-400",
     },
     {
-      id: 9,
+      id: 5,
+      src: boot,
+      title: "BootStrap",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 6,
       src: trello,
       title: "Trello",
       style: "shadow-gray-400",
     },
     {
-      id: 10,
-      src: vs,
-      title: "Vs Code",
+      id: 7,
+      src: js,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 8,
+      src: type,
+      title: "TypeScript",
       style: "shadow-gray-400",
     },
     {
+      id: 9,
+      src: rct,
+      title: "React",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 10,
+      src: node,
+      title: "Node JS",
+      style: "shadow-white",
+    },
+    {
       id: 11,
-      src: boot,
-      title: "BootStrap",
+      src: ex,
+      title: "express JS",
+    },
+    {
+      id: 12,
+      src: mongo,
+      title: "MongoDB",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 13,
+      src: post,
+      title: "Postman",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 14,
+      src: gitt,
+      title: "git",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 15,
+      src: git,
+      title: "GitHub",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 16,
+      src: vs,
+      title: "Vs Code",
       style: "shadow-gray-400",
     },
   ];
