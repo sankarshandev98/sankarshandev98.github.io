@@ -46,13 +46,13 @@ const Experience = () => {
       id: 5,
       src: boot,
       title: "BootStrap",
-      style: "shadow-gray-400",
+      style: "shadow-blue-600",
     },
     {
       id: 6,
       src: trello,
       title: "Trello",
-      style: "shadow-gray-400",
+      style: "shadow-blue-500",
     },
     {
       id: 7,
@@ -64,54 +64,55 @@ const Experience = () => {
       id: 8,
       src: type,
       title: "TypeScript",
-      style: "shadow-gray-400",
+      style: "shadow-blue-400",
     },
     {
       id: 9,
       src: rct,
       title: "React",
-      style: "shadow-blue-600",
+      style: "shadow-blue-300",
     },
     {
       id: 10,
       src: node,
       title: "Node JS",
-      style: "shadow-white",
+      style: "shadow-orange-300",
     },
     {
       id: 11,
       src: ex,
       title: "express JS",
+      style: "shadow-white",
     },
     {
       id: 12,
       src: mongo,
       title: "MongoDB",
-      style: "shadow-pink-400",
+      style: "shadow-green-400",
     },
     {
       id: 13,
       src: post,
       title: "Postman",
-      style: "shadow-gray-400",
+      style: "shadow-orange-500",
     },
     {
       id: 14,
       src: gitt,
       title: "git",
-      style: "shadow-gray-400",
+      style: "shadow-red-500",
     },
     {
       id: 15,
       src: git,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: "shadow-white",
     },
     {
       id: 16,
       src: vs,
       title: "Vs Code",
-      style: "shadow-gray-400",
+      style: "shadow-blue-400",
     },
   ];
 
@@ -134,7 +135,7 @@ const Experience = () => {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="w-20 h-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}
