@@ -7,6 +7,8 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
 import rct from "../assets/react.png";
+import boot from "../assets/b.png";
+import chakra from "../assets/chakra.png";
 // import git from "../assets/github.png";
 // import live from "../assets/web.png";
 import GitHubCalendar from "react-github-calendar";
@@ -17,21 +19,73 @@ export default function Portfolio() {
       id: 1,
       src: jm1,
       title: "JioMart Clone",
+      des: "This is a Ecommerce website, where user can find and purchase many type of products like groceries, electronics , appearals and this is all about the website.",
+      f1: "User Authentication",
+      f2: "filter products",
+      f3: "search functionality",
+      f4: "pagination",
+      f5: "web app",
+      ts1: rct,
+      ts2: html,
+      ts3: css,
+      ts4: js,
+      ts5: boot,
+      demo: "https://strong-truffle-00aad0.netlify.app/",
+      git: "https://github.com/sankarshandev98/JioMart-clone/tree/main/jio-mart",
     },
     {
       id: 2,
       src: kfc1,
       title: "HeadphoneZone Clone",
+      des: "This is a Ecommerce website, where user can find and purchase many type of products like groceries, electronics , appearals and this is all about the website.",
+      f1: "User Authentication",
+      f2: "filter products",
+      f3: "search functionality",
+      f4: "pagination",
+      f5: "web app",
+      ts1: rct,
+      ts2: html,
+      ts3: css,
+      ts4: js,
+      ts5: chakra,
+      demo: "https://dulcet-entremet-004c13.netlify.app/",
+      git: "https://github.com/sankarshandev98/headphonezone-clone",
     },
     {
       id: 3,
       src: hd,
       title: "KFC Clone",
+      des: "This is a Ecommerce website, where user can find and purchase many type of products like groceries, electronics , appearals and this is all about the website.",
+      f1: "User Authentication",
+      f2: "filter products",
+      f3: "search functionality",
+      f4: "pagination",
+      f5: "web app",
+      ts1: rct,
+      ts2: html,
+      ts3: css,
+      ts4: js,
+      ts5: boot,
+      demo: "https://symphonious-rolypoly-b8a660.netlify.app/index.html",
+      git: "https://github.com/sankarshandev98/KFC-clone",
     },
     {
       id: 4,
       src: sk,
       title: "Skill-UP",
+      des: "This is a Ecommerce website, where user can find and purchase many type of products like groceries, electronics , appearals and this is all about the website.",
+      f1: "User Authentication",
+      f2: "filter products",
+      f3: "search functionality",
+      f4: "pagination",
+      f5: "web app",
+      ts1: rct,
+      ts2: html,
+      ts3: css,
+      ts4: js,
+      ts5: boot,
+      demo: "https://skill-up-habitual-oatmeal.netlify.app/",
+      git: "https://github.com/sankarshandev98/SkillUp",
     },
   ];
 
@@ -49,32 +103,68 @@ export default function Portfolio() {
         </div>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, title }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <div className="p-2">
-                <h1>{title}</h1>
+          {portfolios.map(
+            ({
+              id,
+              src,
+              title,
+              des,
+              f1,
+              f2,
+              f3,
+              f4,
+              f5,
+              ts1,
+              ts2,
+              ts3,
+              ts4,
+              ts5,
+              demo,
+              git,
+            }) => (
+              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                <div className="p-2">
+                  <h1>{title}</h1>
+                </div>
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+                <div className="p-4">
+                  <p>{des}</p>
+                </div>
+                <div className="pl-8">
+                  <ol style={{ listStyleType: "decimal" }}>
+                    <li>{f1}</li>
+                    <li>{f2}</li>
+                    <li>{f3}</li>
+                    <li>{f4}</li>
+                    <li>{f5}</li>
+                  </ol>
+                </div>
+                <div className="flex items-center justify-around mt-10">
+                  <img src={ts1} alt="" className="w-10 h-10" />
+                  <img src={ts2} alt="" className="w-10 h-10" />
+                  <img src={ts3} alt="" className="w-10 h-10" />
+                  <img src={ts4} alt="" className="w-10 h-10" />
+                  <img src={ts5} alt="" className="w-10 h-10" />
+                </div>
+                <div className="flex items-center justify-around">
+                  <a href={demo} target="_blank" rel="noopener noreferrer">
+                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                      Demo
+                    </button>
+                  </a>
+                  <a href={git} target="_blank" rel="noopener noreferrer">
+                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                      GitHub
+                    </button>
+                  </a>
+                </div>
               </div>
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-around mt-10">
-                <img src={html} alt="" className="w-10 h-10" />
-                <img src={css} alt="" className="w-10 h-10" />
-                <img src={rct} alt="" className="w-10 h-10" />
-                <img src={js} alt="" className="w-10 h-10" />
-              </div>
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
-              </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
         <div className="w-full h-screen text-white pt-10">
           <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
@@ -83,8 +173,8 @@ export default function Portfolio() {
                 GitHub Statistics
               </p>
             </div>
-            <div className="m-auto">
-              <div className="pt-8">
+            <div>
+              <div className="pt-8 flex justify-center">
                 <GitHubCalendar username="sankarshandev98" />
               </div>
               <div className="m-auto w-full pt-8 flex flex-col lg:flex lg:flex-row md:flex md:flex-col gap-5 justify-between sm:flex sm:flex-col">
