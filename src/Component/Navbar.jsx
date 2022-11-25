@@ -30,7 +30,7 @@ export default function Navbar() {
     <div className="flex justify-between items-center w-full h-10 text-white px-4 bg-blue-400 fixed">
       <div>
         <h1 className="text-2xl text-black font-signature ml-2 font-semibold">
-          Sg's Portfolio
+          SG's Portfolio
         </h1>
       </div>
       <ul className="hidden md:flex">
