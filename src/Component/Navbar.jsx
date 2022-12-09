@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
+  const href = "/Sankarshan-Goswami-Resume.pdf";
+  const download = true;
   const [nav, setNav] = useState(false);
   const links = [
     {
@@ -44,6 +46,15 @@ export default function Navbar() {
             </Link>
           </li>
         ))}
+        <a
+          className="text-black font-semibold ml-4"
+          href={href}
+          download={download}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Resume
+        </a>
       </ul>
       <div
         onClick={() => setNav(!nav)}
@@ -65,6 +76,15 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <a
+            className="text-black font-semibold mt-5"
+            href={href}
+            download={download}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
         </ul>
       )}
     </div>
