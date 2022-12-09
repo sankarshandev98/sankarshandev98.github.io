@@ -15,9 +15,13 @@ import gitt from "../assets/git.png";
 import post from "../assets/postman.png";
 import type from "../assets/typescript.png";
 import ex from "../assets/expressjs.png";
+import nxt from "../assets/nextjs.png";
+import redis from "../assets/redis.png";
+import redux from "../assets/redux.png";
+import rest from "../assets/restapi.png";
 
 const Experience = () => {
-  const techs = [
+  const fs = [
     {
       id: 1,
       src: html,
@@ -62,54 +66,88 @@ const Experience = () => {
     },
     {
       id: 8,
-      src: type,
-      title: "TypeScript",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 9,
       src: rct,
       title: "React",
       style: "shadow-blue-300",
     },
     {
+      id: 9,
+      src: nxt,
+      title: "Next.js",
+      style: "shadow-blue-100",
+    },
+    {
       id: 10,
+      src: redux,
+      title: "Redux",
+      style: "shadow-blue-600",
+    },
+  ];
+  const bs = [
+    {
+      id: 1,
+      src: js,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 2,
+      src: type,
+      title: "TypeScript",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 4,
       src: node,
       title: "Node JS",
       style: "shadow-orange-300",
     },
     {
-      id: 11,
+      id: 5,
       src: ex,
       title: "express JS",
       style: "shadow-white",
     },
     {
-      id: 12,
+      id: 6,
+      src: rest,
+      title: "RESTful Api",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 7,
       src: mongo,
       title: "MongoDB",
       style: "shadow-green-400",
     },
     {
-      id: 13,
+      id: 8,
+      src: redis,
+      title: "Redis",
+      style: "shadow-red-600",
+    },
+  ];
+  const tools = [
+    {
+      id: 1,
       src: post,
       title: "Postman",
       style: "shadow-orange-500",
     },
     {
-      id: 14,
+      id: 2,
       src: gitt,
       title: "git",
       style: "shadow-red-500",
     },
     {
-      id: 15,
+      id: 3,
       src: git,
       title: "GitHub",
       style: "shadow-white",
     },
     {
-      id: 16,
+      id: 4,
       src: vs,
       title: "Vs Code",
       style: "shadow-blue-400",
@@ -124,13 +162,57 @@ const Experience = () => {
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Skills
+            Front-End Skills
           </p>
-          <p className="py-6">These are the technologies I've worked with</p>
+          <p className="py-6">
+            These are the frontend technologies that i use in my project & know
+            well.
+          </p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
+          {fs.map(({ id, src, title, style }) => (
+            <div
+              key={id}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            >
+              <img src={src} alt="" className="w-20 h-20 mx-auto" />
+              <p className="mt-4">{title}</p>
+            </div>
+          ))}
+        </div>
+        <div>
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+            Back-End Skills
+          </p>
+          <p className="py-6">
+            These are some backend technologies that i am familiar & I've worked
+            with in my project.
+          </p>
+        </div>
+
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+          {bs.map(({ id, src, title, style }) => (
+            <div
+              key={id}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            >
+              <img src={src} alt="" className="w-20 h-20 mx-auto" />
+              <p className="mt-4">{title}</p>
+            </div>
+          ))}
+        </div>
+        <div>
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+            Tools
+          </p>
+          <p className="py-6">
+            These are some of the tools that I've worked with.
+          </p>
+        </div>
+
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+          {tools.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
