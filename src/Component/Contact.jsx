@@ -1,6 +1,50 @@
 import React from "react";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { MdCall } from "react-icons/md";
 const Contact = () => {
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          <FaLinkedin size={30} />
+          sankarshandev98
+        </>
+      ),
+      href: "https://www.linkedin.com/in/sankarshandev98/",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          <FaGithub size={30} />
+          sankarshandev98
+        </>
+      ),
+      href: "https://github.com/sankarshandev98",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          <HiOutlineMail size={30} />
+          gsankar164@gmail.com
+        </>
+      ),
+      href: "mailto:gsankar164@gmail.com",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          <MdCall size={30} />
+          8250163607
+        </>
+      ),
+    },
+  ];
   return (
     <div
       name="contact"
@@ -12,6 +56,20 @@ const Contact = () => {
             Contact
           </p>
           <p className="py-6">Submit the form below to get in touch with me</p>
+        </div>
+        <div className="md:flex md:justify-between md:pb-5 pb-5">
+          {links.map(({ id, child, href, style, download }) => (
+            <a
+              key={id}
+              href={href}
+              className="flex justify-between md:justify-center w-full text-white p-4 md:gap-2"
+              download={download}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {child}
+            </a>
+          ))}
         </div>
 
         <div className=" flex justify-center items-center">
