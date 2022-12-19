@@ -3,8 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
-  const href = "/Sankarshan-Goswami-Resume.pdf";
-  const download = true;
+  const href =
+    "https://drive.google.com/file/d/1ttS8bgkXR67W-vdc9uuoMdsdS5wvrcs5/view";
   const [nav, setNav] = useState(false);
   const links = [
     {
@@ -49,7 +49,6 @@ export default function Navbar() {
         <a
           className="text-black font-semibold ml-4"
           href={href}
-          download={download}
           target="_blank"
           rel="noreferrer"
         >
@@ -79,7 +78,6 @@ export default function Navbar() {
           <a
             className="text-black font-semibold mt-5"
             href={href}
-            download={download}
             target="_blank"
             rel="noreferrer"
           >

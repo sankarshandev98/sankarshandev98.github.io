@@ -1,5 +1,5 @@
 import React from "react";
-import jm1 from "../assets/portfolio/1.PNG";
+import jm1 from "../assets/portfolio/1.jpeg";
 import kfc1 from "../assets/portfolio/2.jpg";
 import hd from "../assets/portfolio/3.PNG";
 import sk from "../assets/portfolio/4.png";
@@ -12,6 +12,7 @@ import chakra from "../assets/chakra.png";
 import expre from "../assets/expressjs.png";
 import mongo from "../assets/MongoDB.png";
 import node from "../assets/node.png";
+import nxt from "../assets/nextjs.png";
 import GitHubCalendar from "react-github-calendar";
 
 export default function Portfolio() {
@@ -19,59 +20,23 @@ export default function Portfolio() {
     {
       id: 1,
       src: jm1,
-      title: "JioMart Clone",
-      des: "This is a Ecommerce website, where user can find and purchase many type of products like groceries, electronics , appearals and this is all about the website.",
+      title: "ChargeNow",
+      des: "Chargenow is a subscription management system which can help you handle all the aspects of the subscription life cycle including recurring billing, invoicing and trial management for your customers.",
       f1: "User Authentication",
-      f2: "Filter Products",
-      f3: "Cart functionality",
+      f2: "Email System",
+      f3: "Back-end Add service",
       f4: "Mobile Responsive",
       f5: "Web app",
-      ts1: rct,
-      ts2: html,
-      ts3: css,
-      ts4: js,
-      ts5: boot,
-      demo: "https://strong-truffle-00aad0.netlify.app/",
-      git: "https://github.com/sankarshandev98/JioMart-clone/tree/main/jio-mart",
+      ts1: nxt,
+      ts2: js,
+      ts3: chakra,
+      ts4: node,
+      ts5: mongo,
+      demo: "https://abandoned-reaction-8426-dhamisir.vercel.app/",
+      git: "https://github.com/sankarshandev98/Chargenow",
     },
     {
       id: 2,
-      src: kfc1,
-      title: "HeadphoneZone Clone",
-      des: "This is a Ecommerce website, where user can find and purchase many type of audio related products like headphone, earphone, etc. and this is all about the website.",
-      f1: "User Authentication",
-      f2: "Filter Products",
-      f3: "Search Functionality",
-      f4: "Add to cart",
-      f5: "Web app",
-      ts1: rct,
-      ts2: html,
-      ts3: css,
-      ts4: js,
-      ts5: boot,
-      demo: "https://dulcet-entremet-004c13.netlify.app/",
-      git: "https://github.com/sankarshandev98/headphonezone-clone",
-    },
-    {
-      id: 3,
-      src: hd,
-      title: "KFC Clone",
-      des: "This is a beverages & food website, where user can find and order many type of beverages & soft drinks also find restaurants, so this is all about the website.",
-      f1: "User Authentication",
-      f2: "Filter Products",
-      f3: "Search Functionality",
-      f4: "Add to cart",
-      f5: "Web app",
-      ts1: rct,
-      ts2: html,
-      ts3: css,
-      ts4: js,
-      ts5: chakra,
-      demo: "https://symphonious-rolypoly-b8a660.netlify.app/index.html",
-      git: "https://github.com/sankarshandev98/KFC-clone",
-    },
-    {
-      id: 4,
       src: sk,
       title: "Skill-UP",
       des: "Skill-Up is a global destination for teaching and learning online. It is a unique project where a user and admin can both login in different pages and changes made in a admin's page , can be seen in the user's page",
@@ -88,6 +53,42 @@ export default function Portfolio() {
       demo: "https://skill-up-habitual-oatmeal.netlify.app/",
       git: "https://github.com/sankarshandev98/SkillUp",
     },
+    {
+      id: 3,
+      src: hd,
+      title: "KFC Clone",
+      des: "This is a beverages & food website, where user can find and order many type of beverages & soft drinks also find restaurants, so this is all about the website.",
+      f1: "User Authentication",
+      f2: "Filter Products",
+      f3: "Search Functionality",
+      f4: "Add to cart",
+      f5: "Web app",
+      ts1: html,
+      ts2: css,
+      ts3: js,
+      ts4: boot,
+      ts5: chakra,
+      demo: "https://symphonious-rolypoly-b8a660.netlify.app/index.html",
+      git: "https://github.com/sankarshandev98/KFC-clone",
+    },
+    {
+      id: 4,
+      src: kfc1,
+      title: "HeadphoneZone Clone",
+      des: "This is a Ecommerce website, where user can find and purchase many type of audio related products like headphone, earphone, etc.",
+      f1: "User Authentication",
+      f2: "Filter Products",
+      f3: "Search Functionality",
+      f4: "Add to cart",
+      f5: "Web app",
+      ts1: html,
+      ts2: css,
+      ts3: js,
+      ts4: boot,
+      ts5: chakra,
+      demo: "https://dulcet-entremet-004c13.netlify.app/",
+      git: "https://github.com/sankarshandev98/headphonezone-clone",
+    },
   ];
 
   return (
@@ -103,7 +104,7 @@ export default function Portfolio() {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10 px-12 sm:px-0 justify-center">
           {portfolios.map(
             ({
               id,
@@ -167,10 +168,10 @@ export default function Portfolio() {
             )
           )}
         </div>
-        <div className="w-full h-screen text-white pt-10">
+        <div className="w-full h-full text-white pt-10">
           <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
             <div>
-              <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+              <p className="text-3xl font-bold inline border-b-4 border-gray-500">
                 GitHub Statistics
               </p>
             </div>
