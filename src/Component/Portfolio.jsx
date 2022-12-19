@@ -152,14 +152,24 @@ export default function Portfolio() {
                   <img src={ts4} alt="" className="w-10 h-10" />
                   <img src={ts5} alt="" className="w-10 h-10" />
                 </div>
-                <div className="flex items-center justify-around">
-                  <a href={demo} target="_blank" rel="noopener noreferrer">
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <div className="flex items-center justify-around pt-5 pb-3">
+                  <a
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border rounded-lg"
+                  >
+                    <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
                       Demo
                     </button>
                   </a>
-                  <a href={git} target="_blank" rel="noopener noreferrer">
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href={git}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border rounded-lg"
+                  >
+                    <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
                       GitHub
                     </button>
                   </a>
