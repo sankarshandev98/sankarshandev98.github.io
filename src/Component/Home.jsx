@@ -6,6 +6,7 @@ const Home = () => {
   const download = true;
   return (
     <div
+      id="home"
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
@@ -22,7 +23,7 @@ const Home = () => {
             Hello, I am Sankarshan Goswami
           </h2>
           <a
-            className="group text-white w-fit px-4 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer gap-2"
+            className="group text-white w-fit px-4 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer gap-2 home-img"
             href={href}
             download={download}
             target="_blank"

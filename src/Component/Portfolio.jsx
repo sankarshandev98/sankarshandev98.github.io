@@ -93,6 +93,7 @@ export default function Portfolio() {
 
   return (
     <div
+      id="projects"
       name="project"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full pt-8"
     >

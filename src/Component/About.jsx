@@ -3,6 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div
+      id="about"
       name="about me"
       className="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white pb-20"
     >

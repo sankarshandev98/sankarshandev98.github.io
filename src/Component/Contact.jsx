@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdCall } from "react-icons/md";
+
 const Contact = () => {
   const links = [
     {
@@ -14,6 +15,7 @@ const Contact = () => {
       ),
       href: "https://www.linkedin.com/in/sankarshandev98/",
       style: "rounded-tr-md",
+      contactId: "contact-linkedin",
     },
     {
       id: 2,
@@ -24,6 +26,7 @@ const Contact = () => {
         </>
       ),
       href: "https://github.com/sankarshandev98",
+      contactId: "contact-github",
     },
     {
       id: 3,
@@ -34,6 +37,7 @@ const Contact = () => {
         </>
       ),
       href: "mailto:gsankar164@gmail.com",
+      contactId: "contact-email",
     },
     {
       id: 4,
@@ -43,10 +47,13 @@ const Contact = () => {
           8250163607
         </>
       ),
+      contactId: "contact-phone",
     },
   ];
+
   return (
     <div
+      id="contact"
       name="contact"
       className="w-full pt-8 bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
@@ -58,7 +65,7 @@ const Contact = () => {
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
         <div className="md:flex md:justify-between md:pb-5 pb-5">
-          {links.map(({ id, child, href, style, download }) => (
+          {links.map(({ id, child, href, download, contactId }) => (
             <a
               key={id}
               href={href}
@@ -66,6 +73,7 @@ const Contact = () => {
               download={download}
               target="_blank"
               rel="noreferrer"
+              id={contactId}
             >
               {child}
             </a>
