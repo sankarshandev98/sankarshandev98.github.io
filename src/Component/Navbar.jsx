@@ -55,6 +55,7 @@ export default function Navbar() {
           </li>
         ))}
         <a
+          id="resume-button-1"
           className="text-black font-semibold ml-4 nav-link resume"
           href={href}
           target="_blank"

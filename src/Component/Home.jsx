@@ -23,6 +23,7 @@ const Home = () => {
             Hello, I am Sankarshan Goswami
           </h2>
           <a
+            id="resume-button-2"
             className="group text-white w-fit px-4 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer gap-2 resume-link-2"
             href={href}
             download={download}
