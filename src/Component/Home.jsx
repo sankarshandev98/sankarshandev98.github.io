@@ -15,15 +15,18 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-full sm:w-200px sm:h-200px mx-auto w-1/2 md:w-full md:gap-2"
+            className="rounded-full sm:w-200px sm:h-200px mx-auto w-1/2 md:w-full md:gap-2 home-img"
           />
         </div>
         <div className="flex flex-col justify-center h-auto items-center">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white pb-1 text-center md:pb-5 pt-16">
+          <h2
+            className="text-3xl sm:text-5xl md:text-6xl font-bold text-white pb-1 text-center md:pb-5 pt-16"
+            id="user-detail-name"
+          >
             Hello, I am Sankarshan Goswami
           </h2>
           <a
-            className="group text-white w-fit px-4 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer gap-2 home-img"
+            className="group text-white w-fit px-4 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer gap-2 resume-link-2"
             href={href}
             download={download}
             target="_blank"

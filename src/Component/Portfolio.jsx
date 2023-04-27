@@ -125,9 +125,12 @@ export default function Portfolio() {
               demo,
               git,
             }) => (
-              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg project-card"
+              >
                 <div className="p-2">
-                  <h1>{title}</h1>
+                  <h1 className="project-title">{title}</h1>
                 </div>
                 <img
                   src={src}
@@ -135,7 +138,7 @@ export default function Portfolio() {
                   className="rounded-md duration-200 hover:scale-105"
                 />
                 <div className="p-4">
-                  <p>{des}</p>
+                  <p className="project-description">{des}</p>
                 </div>
                 <div className="pl-8">
                   <ol style={{ listStyleType: "decimal" }}>
@@ -146,7 +149,7 @@ export default function Portfolio() {
                     <li>{f5}</li>
                   </ol>
                 </div>
-                <div className="flex items-center justify-around mt-10">
+                <div className="flex items-center justify-around mt-10 project-tech-stack">
                   <img src={ts1} alt="" className="w-10 h-10" />
                   <img src={ts2} alt="" className="w-10 h-10" />
                   <img src={ts3} alt="" className="w-10 h-10" />
@@ -158,7 +161,7 @@ export default function Portfolio() {
                     href={demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border rounded-lg"
+                    className="border rounded-lg project-deployed-link"
                   >
                     <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
                       Demo
@@ -168,7 +171,7 @@ export default function Portfolio() {
                     href={git}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border rounded-lg"
+                    className="border rounded-lg project-github-link"
                   >
                     <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
                       GitHub
@@ -187,17 +190,27 @@ export default function Portfolio() {
               </p>
             </div>
             <div>
-              <div className="pt-8 flex justify-center">
+              <div className="pt-8 flex justify-center react-activity-calendar">
                 <GitHubCalendar username="sankarshandev98" />
               </div>
-              <div className="m-auto w-full pt-8 flex flex-col lg:flex lg:flex-row md:flex md:flex-col gap-5 justify-between sm:flex sm:flex-col">
+              <div className="m-auto w-full pt-8 flex flex-col gap-5 justify-between">
                 <img
                   src="https://camo.githubusercontent.com/4cd88415a16c5b90cc86bab400cc59afd8dacad1448f63790a2d4d565385f304/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d73616e6b61727368616e646576393826"
                   alt=""
+                  id="github-streak-stats"
+                  className="m-auto"
+                />
+                <img
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sankarshandev98&size_weight=0.5&count_weight=0.5"
+                  alt=""
+                  id="github-top-langs"
+                  className="m-auto"
                 />
                 <img
                   src="https://camo.githubusercontent.com/21a630e6dc5debdf5b0c337fe5a5e6529160fdc6dc879c86ca3f42c8019cd469/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d73616e6b61727368616e64657639382673686f775f69636f6e733d74727565266c6f63616c653d656e"
                   alt=""
+                  id="github-stats-card"
+                  className="m-auto"
                 />
               </div>
             </div>

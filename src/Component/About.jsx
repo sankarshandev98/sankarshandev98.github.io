@@ -13,7 +13,7 @@ const About = () => {
             About Me
           </p>
         </div>
-        <p className="text-xl mt-20 leading-normal">
+        <p className="text-xl mt-20 leading-normal" id="user-detail-intro">
           A motivated Mern Stack Web Developer, experiences working with
           React.JS, Next.Js, Node.js, Express.JS, MongoDB, etc. Curious to learn
           & have capability to adapt the latest web technologies. Also i have

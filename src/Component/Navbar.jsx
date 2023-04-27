@@ -87,7 +87,7 @@ export default function Navbar() {
             </li>
           ))}
           <a
-            className="text-black font-semibold mt-5 nav-link resume"
+            className="text-black font-semibold mt-5 resume-link-1"
             href={href}
             target="_blank"
             rel="noreferrer"
