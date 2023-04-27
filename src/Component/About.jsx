@@ -5,11 +5,14 @@ const About = () => {
     <div
       id="about"
       name="about me"
-      className="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white pb-20"
+      className="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white pb-20 about section"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pt-10">
-          <p className="text-3xl font-bold inline border-b-4 border-gray-500">
+          <p
+            className="text-3xl font-bold inline border-b-4 border-gray-500"
+            id="user-detail-name"
+          >
             About Me
           </p>
         </div>

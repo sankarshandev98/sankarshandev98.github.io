@@ -195,19 +195,19 @@ export default function Portfolio() {
               </div>
               <div className="m-auto w-full pt-8 flex flex-col gap-5 justify-between">
                 <img
-                  src="https://camo.githubusercontent.com/4cd88415a16c5b90cc86bab400cc59afd8dacad1448f63790a2d4d565385f304/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d73616e6b61727368616e646576393826"
+                  src="https://github-readme-streak-stats.herokuapp.com?user=sankarshandev98"
                   alt=""
                   id="github-streak-stats"
                   className="m-auto"
                 />
                 <img
-                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sankarshandev98&size_weight=0.5&count_weight=0.5"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sankarshandev98"
                   alt=""
                   id="github-top-langs"
                   className="m-auto"
                 />
                 <img
-                  src="https://camo.githubusercontent.com/21a630e6dc5debdf5b0c337fe5a5e6529160fdc6dc879c86ca3f42c8019cd469/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d73616e6b61727368616e64657639382673686f775f69636f6e733d74727565266c6f63616c653d656e"
+                  src="https://github-readme-stats.vercel.app/api?username=sankarshandev98"
                   alt=""
                   id="github-stats-card"
                   className="m-auto"

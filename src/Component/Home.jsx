@@ -19,10 +19,7 @@ const Home = () => {
           />
         </div>
         <div className="flex flex-col justify-center h-auto items-center">
-          <h2
-            className="text-3xl sm:text-5xl md:text-6xl font-bold text-white pb-1 text-center md:pb-5 pt-16"
-            id="user-detail-name"
-          >
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white pb-1 text-center md:pb-5 pt-16">
             Hello, I am Sankarshan Goswami
           </h2>
           <a
