@@ -25,7 +25,7 @@ export default function Portfolio() {
       id: 1,
       src: ecom,
       title: "Ecom (flipkart clone)",
-      des: "A e-commerce website, clone of flipkart domain. Where users can access different garments products through Searching, Sorting, Filtering. Pagination & Authentication is also there. Fully production grade responsive for mobile, tablet & PC. Upto (320px)",
+      des: "A e-commerce website, clone of flipkart domain. Where users can access different garments products through Searching, Sorting, Filtering. Pagination & Authentication is also there.",
       f1: "Production Grade Responsive (upto 320px)",
       f2: "Sorting, Flitering, Pagination",
       f3: "User Authentication",
@@ -177,7 +177,7 @@ export default function Portfolio() {
                   alt=""
                   className="rounded-md duration-200 hover:scale-105 w-full h-64 object-fill"
                 />
-                <div className="p-4 w-full md:h-32 sm:h-32">
+                <div className="p-4 w-full md:h-36 sm:h-36">
                   <p className="project-description">{des}</p>
                 </div>
                 <div className="pl-8">
