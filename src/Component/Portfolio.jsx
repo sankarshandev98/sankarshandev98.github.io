@@ -25,7 +25,7 @@ export default function Portfolio() {
       id: 1,
       src: ecom,
       title: "Ecom (flipkart clone)",
-      des: "This is a Ecommerce website, where user can find and purchase many type of garments products etc.",
+      des: "A e-commerce website, clone of flipkart domain. Where users can access different garments products through Searching, Sorting, Filtering. Pagination & Authentication is also there. Fully production grade responsive for mobile, tablet & PC. Upto (320px)",
       f1: "Production Grade Responsive (upto 320px)",
       f2: "Sorting, Flitering, Pagination",
       f3: "User Authentication",

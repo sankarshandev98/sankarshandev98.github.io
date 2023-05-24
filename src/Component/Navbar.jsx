@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 export default function Navbar() {
   const href =
-    "https://drive.google.com/file/d/1Z8I0_ZJFcuqakPRvCgIrs4DpNVSuBT3A/view";
+    "https://drive.google.com/file/d/1Z8I0_ZJFcuqakPRvCgIrs4DpNVSuBT3A/view?usp=sharing";
   const [nav, setNav] = useState(false);
   const links = [
     {
