@@ -177,7 +177,7 @@ export default function Portfolio() {
                   alt=""
                   className="rounded-md duration-200 hover:scale-105 w-full h-64 object-fill"
                 />
-                <div className="p-4 w-full h-32">
+                <div className="p-4 w-full md:h-32 sm:h-32">
                   <p className="project-description">{des}</p>
                 </div>
                 <div className="pl-8">
