@@ -190,11 +190,11 @@ export default function Portfolio() {
                   </ol>
                 </div>
                 <div className="flex items-center justify-around mt-10 project-tech-stack">
-                  <img src={ts1} alt="" className="w-10 h-10" />
-                  <img src={ts2} alt="" className="w-10 h-10" />
-                  <img src={ts3} alt="" className="w-10 h-10" />
-                  <img src={ts4} alt="" className="w-10 h-10" />
-                  <img src={ts5} alt="" className="w-10 h-10" />
+                  <img src={ts1} alt="" className="w-10 h-10 object-fill" />
+                  <img src={ts2} alt="" className="w-10 h-10 object-fill" />
+                  <img src={ts3} alt="" className="w-10 h-10 object-fill" />
+                  <img src={ts4} alt="" className="w-10 h-10 object-fill" />
+                  <img src={ts5} alt="" className="w-10 h-10 object-fill" />
                 </div>
                 <div className="flex items-center justify-around pt-5 pb-3">
                   <a
