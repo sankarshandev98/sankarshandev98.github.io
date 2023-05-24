@@ -1,12 +1,16 @@
 import React from "react";
-import jm1 from "../assets/portfolio/1.jpeg";
+import charge from "../assets/portfolio/1.jpeg";
 import kfc1 from "../assets/portfolio/2.jpg";
 import hd from "../assets/portfolio/3.PNG";
 import sk from "../assets/portfolio/4.PNG";
+import ecom from "../assets/portfolio/5.png";
+import note from "../assets/portfolio/note.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
 import rct from "../assets/react.png";
+import router from "../assets/router.png";
+import tail from "../assets/tailwind.png";
 import boot from "../assets/b.png";
 import chakra from "../assets/chakra.png";
 import expre from "../assets/expressjs.png";
@@ -19,7 +23,25 @@ export default function Portfolio() {
   const portfolios = [
     {
       id: 1,
-      src: jm1,
+      src: ecom,
+      title: "Ecom (flipkart clone)",
+      des: "This is a Ecommerce website, where user can find and purchase many type of garments products etc.",
+      f1: "Production Grade Responsive (upto 320px)",
+      f2: "Sorting, Flitering, Pagination",
+      f3: "User Authentication",
+      f4: "Web app",
+      f5: "Upto the mark UI & UX",
+      ts1: rct,
+      ts2: router,
+      ts3: js,
+      ts4: tail,
+      ts5: chakra,
+      demo: "https://ecom-k94m.onrender.com",
+      git: "https://github.com/sankarshandev98/Ecom-WebApp",
+    },
+    {
+      id: 2,
+      src: charge,
       title: "ChargeNow",
       des: "Chargenow is a subscription management system which can help you handle all the aspects of the subscription life cycle including recurring billing, invoicing and trial management for your customers.",
       f1: "User Authentication",
@@ -36,10 +58,10 @@ export default function Portfolio() {
       git: "https://github.com/sankarshandev98/Chargenow",
     },
     {
-      id: 2,
+      id: 3,
       src: sk,
       title: "Skill-UP",
-      des: "Skill-Up is a global destination for teaching and learning online. It is a unique project where a user and admin can both login in different pages and changes made in a admin's page , can be seen in the user's page",
+      des: "Skill-Up is a global destination for teaching and learning online. It is a unique project where a user and admin can both login in different pages and changes made in a admin's page , can be seen in the user's page.",
       f1: "User Authentication",
       f2: "Admin dashboard",
       f3: "Dark mode",
@@ -54,12 +76,30 @@ export default function Portfolio() {
       git: "https://github.com/sankarshandev98/SkillUp",
     },
     {
-      id: 3,
-      src: hd,
+      id: 4,
+      src: note,
+      title: "Note Taking Web-App",
+      des: "This is a note assign & taking app. Admin can assign, add, remove and edit note & role.",
+      f1: "User Authentication",
+      f2: "Admin dashboard",
+      f3: "Mobile Responsive",
+      f4: "MERN stack",
+      f5: "Good UI & UX",
+      ts1: rct,
+      ts2: router,
+      ts3: expre,
+      ts4: js,
+      ts5: mongo,
+      demo: "https://mern-note.onrender.com/",
+      git: "https://github.com/sankarshandev98/MERN-NOTE",
+    },
+    {
+      id: 5,
+      src: kfc1,
       title: "KFC Clone",
       des: "This is a beverages & food website, where user can find and order many type of beverages & soft drinks also find restaurants, so this is all about the website.",
       f1: "User Authentication",
-      f2: "Filter Products",
+      f2: "Sorting & Filter Products",
       f3: "Search Functionality",
       f4: "Add to cart",
       f5: "Web app",
@@ -72,12 +112,12 @@ export default function Portfolio() {
       git: "https://github.com/sankarshandev98/KFC-clone",
     },
     {
-      id: 4,
-      src: kfc1,
+      id: 6,
+      src: hd,
       title: "HeadphoneZone Clone",
       des: "This is a Ecommerce website, where user can find and purchase many type of audio related products like headphone, earphone, etc.",
       f1: "User Authentication",
-      f2: "Filter Products",
+      f2: "Sorting & Filter Products",
       f3: "Search Functionality",
       f4: "Add to cart",
       f5: "Web app",
@@ -135,9 +175,9 @@ export default function Portfolio() {
                 <img
                   src={src}
                   alt=""
-                  className="rounded-md duration-200 hover:scale-105"
+                  className="rounded-md duration-200 hover:scale-105 w-full h-64 object-fill"
                 />
-                <div className="p-4">
+                <div className="p-4 w-full h-32">
                   <p className="project-description">{des}</p>
                 </div>
                 <div className="pl-8">
