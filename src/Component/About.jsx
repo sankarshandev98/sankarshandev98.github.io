@@ -17,13 +17,13 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20 leading-normal" id="user-detail-intro">
-          A motivated Mern Stack Web Developer, experiences working with
-          React.JS, Next.Js, Node.js, Express.JS, MongoDB, etc. Curious to learn
-          & have capability to adapt the latest web technologies. Also i have
-          develop a deep understanding of the start-up ecosystem. Looking
-          forward to starting a career as a web developer and making a
-          significant contribution to an organization through dedicated effort &
-          time.
+          A motivated Mern Stack Web Developer, experiences working with Webflow
+          and Figma tools also with React.JS, Next.Js, Node.js, Express.JS,
+          MongoDB, etc. Curious to learn & have capability to adapt the latest
+          web technologies. Also i have develop a deep understanding of the
+          start-up ecosystem. Looking forward to starting a career as a web
+          developer and making a significant contribution to an organization
+          through dedicated effort & time.
         </p>
       </div>
     </div>
